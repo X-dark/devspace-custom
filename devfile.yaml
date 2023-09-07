@@ -20,7 +20,14 @@ components:
       sourceMapping: /projects
     name: universal-developer-image
   - container:
+      env:
+        - name: HOME
+          value: /projects/devspace-custom
       image: mcr.microsoft.com/azure-cli
       command: ['sleep']
       args: ['infinity']
+      memoryRequest: 256M
+      memoryLimit: 1G
+      cpuRequest: 0.1
+      cpuLimit: 0.5
     name: azure-cli
