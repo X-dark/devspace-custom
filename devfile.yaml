@@ -17,6 +17,6 @@ components:
       image: registry.redhat.io/devspaces/udi-rhel8@sha256:de81824e6ccf82a286a28566432d4f43928a989c570578c4b4df9484ef136cca
       sourceMapping: /projects
     name: universal-developer-image
- - container:
-    image: mcr.microsoft.com/azure-cli
-    name: azure-cli
+  - container:
+      image: mcr.microsoft.com/azure-cli
+      name: azure-cli
