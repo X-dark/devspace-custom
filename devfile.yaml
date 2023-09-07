@@ -19,4 +19,4 @@ components:
     name: universal-developer-image
   - container:
       image: mcr.microsoft.com/azure-cli
-      name: azure-cli
+    name: azure-cli
