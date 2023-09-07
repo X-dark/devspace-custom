@@ -21,4 +21,6 @@ components:
     name: universal-developer-image
   - container:
       image: mcr.microsoft.com/azure-cli
+      command: ['sleep']
+      args: ['infinity']
     name: azure-cli
