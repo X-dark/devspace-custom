@@ -1,0 +1,22 @@
+schemaVersion: 2.2.0
+components:
+  - container:
+      env:
+        - name: CHE_DASHBOARD_URL
+          value: https://devspaces.apps.scale-18048a4a.p2c2e0b28-3062-438e-8c6b-3da15dc780d7.azure-amer.sanofi.com
+        - name: CHE_PLUGIN_REGISTRY_URL
+          value: https://devspaces.apps.scale-18048a4a.p2c2e0b28-3062-438e-8c6b-3da15dc780d7.azure-amer.sanofi.com/plugin-registry/v3
+        - name: CHE_PLUGIN_REGISTRY_INTERNAL_URL
+          value: http://plugin-registry.scale-devspaces.svc:8080/v3
+        - name: CLUSTER_CONSOLE_URL
+          value: https://openshift-console.apps.scale-18048a4a.p2c2e0b28-3062-438e-8c6b-3da15dc780d7.azure-amer.sanofi.com
+        - name: CLUSTER_CONSOLE_TITLE
+          value: OpenShift console
+        - name: OPENVSX_REGISTRY_URL
+          value: ''
+      image: registry.redhat.io/devspaces/udi-rhel8@sha256:de81824e6ccf82a286a28566432d4f43928a989c570578c4b4df9484ef136cca
+      sourceMapping: /projects
+    name: universal-developer-image
+ - container:
+    image: mcr.microsoft.com/azure-cli
+    name: azure-cli
