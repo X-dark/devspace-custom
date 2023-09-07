@@ -1,4 +1,6 @@
 schemaVersion: 2.2.0
+metadata:
+  name: az-cli
 components:
   - container:
       env:
